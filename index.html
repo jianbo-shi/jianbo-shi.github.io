@@ -99,6 +99,17 @@
       color: var(--muted);
     }
 
+    .contact-line {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .contact-line span {
+      display: inline-block;
+      margin-right: 14px;
+    }
+
     .profile-pic {
       width: 420px;
       aspect-ratio: 5 / 3;
@@ -273,6 +284,17 @@
       margin: 8px 0;
     }
 
+    .student-list li {
+      margin: 12px 0;
+    }
+
+    .thesis-title {
+      display: block;
+      color: var(--muted);
+      margin-top: 2px;
+      padding-left: 18px;
+    }
+
     footer {
       border-top: 1px solid var(--line);
       padding: 28px 0 42px;
@@ -320,6 +342,10 @@
             <a href="jshi_bio.htm">Biography</a> |
             <a href="NSF_SocialMemory/nsf_social_visual_memory.html">First Person Vision</a>
           </nav>
+          <div class="contact-line">
+            <span>Email: <a href="mailto:jshi@seas.upenn.edu">jshi@seas.upenn.edu</a></span>
+            <span>Office: 468 Levine Hall</span>
+          </div>
         </div>
         <img src="jianbo2026.jpeg" alt="Jianbo Shi" class="profile-pic">
       </div>
@@ -584,17 +610,64 @@
 
       <section>
         <div class="section-header">
-          <h2>Former Ph.D. Students</h2>
+          <h2>Ph.D. Dissertation/ Thesis Supervised</h2>
         </div>
-        <ul class="simple-list">
-          <li><a href="http://www.cs.bc.edu/~syu" target="_blank" rel="noopener">Stella Yu</a></li>
-          <li><a href="http://www.cs.cmu.edu/~abhinavg/Home.html" target="_blank" rel="noopener">Abhinav Gupta</a></li>
-          <li><a href="http://www.seas.upenn.edu/~qihuizhu" target="_blank" rel="noopener">Qihui Zhu</a></li>
-          <li><a href="http://www.seas.upenn.edu/~psrin/" target="_blank" rel="noopener">Praveen Srinivasan</a></li>
-          <li><a href="http://www.seas.upenn.edu/~katef/" target="_blank" rel="noopener">Katerina Fragkiadaki</a></li>
-          <li><a href="jshi_students.html">More student information</a></li>
-        </ul>
+        <ol class="simple-list student-list">
+          <li>
+            <a href="https://web.eecs.umich.edu/~stellayu/" target="_blank" rel="noopener">Stella Yu</a>, Professor, University of Michigan; Adjunct Professor, UC Berkeley
+            <span class="thesis-title">"Computational Models of Perceptual Organization", Carnegie Mellon University, May 2003.</span>
+          </li>
+          <li>
+            <a href="https://www.cs.cmu.edu/~abhinavg/" target="_blank" rel="noopener">Abhinav Gupta</a>, Professor, Carnegie Mellon University
+            <span class="thesis-title">"Beyond Nouns and Verbs", 2009, U. Maryland. Co-advisor with Larry Davis.</span>
+          </li>
+          <li>
+            Qihui Zhu, Nine Chapters Capital Management
+            <span class="thesis-title">"Shape Detection by Packing Contours and Regions", December 2010.</span>
+          </li>
+          <li>
+            <a href="https://research.google/people/alexander-toshev/" target="_blank" rel="noopener">Alexander Toshev</a>, Google
+            <span class="thesis-title">"Shape Representations for Object Recognition", December 2010. Co-advisor with K. Daniilidis, B. Taskar, Google.</span>
+          </li>
+          <li>
+            Praveen Srinivasan, TLM, Perception at Aurora
+            <span class="thesis-title">"Holistic Shape-Based Object Recognition Using Bottom-up Image Structures", February 2011.</span>
+          </li>
+          <li>
+            Elena Bernardis, Assistant Professor of Medical School, UPenn
+            <span class="thesis-title">"Finding Dots in Microscopic Images", April 2011. Co-advisor with S. Yu.</span>
+          </li>
+          <li>
+            Song Gang, Google
+            <span class="thesis-title">"Quantitative Analysis of Thoracic Computed Tomography Images", May 2013. Co-advisor with J. Gee.</span>
+          </li>
+          <li>
+            <a href="https://www.cs.cmu.edu/~katef/" target="_blank" rel="noopener">Katerina Fragkiadaki</a>, Associate Professor, Carnegie Mellon University
+            <span class="thesis-title">"Multi-granularity Representations for Human Interactions: Pose, Motion and Intention", September 2013.</span>
+          </li>
+          <li>
+            Jeff Byrne, STR
+            <span class="thesis-title">"Shape Representations using Nested Descriptors", April 2014.</span>
+          </li>
+          <li>
+            Weiyu Zhang, Apple
+            <span class="thesis-title">"Visual Recognition via Matching Discriminative Deformable Patterns", Proposal May 2014.</span>
+          </li>
+          <li>
+            <a href="https://www.gedasbertasius.com/" target="_blank" rel="noopener">Gedas Bertasius</a>, Assistant Professor, UNC
+            <span class="thesis-title">"Embodied Visual Perception Models for Human Behavior", 2019.</span>
+          </li>
+          <li>
+            Jyh-Jing Hwang, Research Scientist at Waymo Research
+            <span class="thesis-title">"Learning Image Segmentation with Relation-Centric Loss and Representation", 2020.</span>
+          </li>
+          <li>
+            Lingzhi Zhang, Research Scientist at Adobe
+            <span class="thesis-title">"Bridging Visual Generation and Recognition", 2023.</span>
+          </li>
+        </ol>
       </section>
+
     </main>
 
     <footer>
