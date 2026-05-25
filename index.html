@@ -67,7 +67,7 @@
 
     .header-content {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 300px;
+      grid-template-columns: minmax(0, 1fr) 420px;
       gap: 42px;
       align-items: center;
     }
@@ -100,10 +100,11 @@
     }
 
     .profile-pic {
-      width: 300px;
-      aspect-ratio: 1;
+      width: 420px;
+      aspect-ratio: 5 / 3;
       object-fit: cover;
-      border-radius: 50%;
+      object-position: 62% 0%;
+      border-radius: 8px;
       border: 6px solid var(--soft);
       box-shadow: var(--shadow);
       display: block;
@@ -291,7 +292,7 @@
       }
 
       .profile-pic {
-        width: min(280px, 78vw);
+        width: min(360px, 88vw);
       }
 
       .pub-image {
@@ -314,14 +315,13 @@
           <h1>Jianbo Shi</h1>
           <p class="subtitle">Professor of Computer and Information Science, University of Pennsylvania</p>
           <nav class="social-links" aria-label="Primary links">
-            <a href="https://www.cis.upenn.edu/~jshi/" target="_blank" rel="noopener">UPenn page</a> |
             <a href="https://scholar.google.com/scholar?q=Jianbo+Shi" target="_blank" rel="noopener">Google Scholar</a> |
             <a href="https://dblp.org/pid/71/3879.html" target="_blank" rel="noopener">Publications</a> |
             <a href="jshi_bio.htm">Biography</a> |
             <a href="NSF_SocialMemory/nsf_social_visual_memory.html">First Person Vision</a>
           </nav>
         </div>
-        <img src="jianbo2026_headshot.jpg" alt="Jianbo Shi" class="profile-pic">
+        <img src="jianbo2026.jpeg" alt="Jianbo Shi" class="profile-pic">
       </div>
     </header>
 
@@ -363,16 +363,6 @@
             <p>Models that interpret intention, social interaction, and sensorimotor behavior from egocentric video.</p>
           </article>
         </div>
-      </section>
-
-      <section>
-        <div class="section-header">
-          <h2>Teaching</h2>
-        </div>
-        <ul class="simple-list">
-          <li><a href="http://www.seas.upenn.edu/~cis581/" target="_blank" rel="noopener">CIS 581: Computer Vision and Computational Photography</a></li>
-          <li><a href="http://www.seas.upenn.edu/~cis580/" target="_blank" rel="noopener">CIS 580: Machine Perception</a></li>
-        </ul>
       </section>
 
       <section>
