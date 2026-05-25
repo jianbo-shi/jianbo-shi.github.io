@@ -67,7 +67,7 @@
 
     .header-content {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 300px;
+      grid-template-columns: minmax(0, 1fr) 420px;
       gap: 42px;
       align-items: center;
     }
@@ -111,10 +111,11 @@
     }
 
     .profile-pic {
-      width: 300px;
-      aspect-ratio: 3 / 4;
+      width: 420px;
+      aspect-ratio: 4 / 3;
       object-fit: cover;
-      object-position: 62% 0%;
+      object-position: 56% 18%;
+      transform: scale(1.22);
       border-radius: 8px;
       border: 6px solid var(--soft);
       box-shadow: var(--shadow);
@@ -384,7 +385,7 @@
       }
 
       .profile-pic {
-        width: min(300px, 78vw);
+        width: min(420px, 88vw);
       }
 
       .pub-image {
@@ -569,6 +570,22 @@
               <a href="https://huzeyann.github.io/BrainDecodesDeepNets/" target="_blank" rel="noopener">Website</a>
               <a href="https://github.com/huzeyann/BrainDecodesDeepNets" target="_blank" rel="noopener">GitHub</a>
               <a href="https://cvpr.thecvf.com/media/PosterPDFs/CVPR%202024/29908.png?t=1716212665.380445" target="_blank" rel="noopener">Poster</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="pub-image">
+            <img src="assets/img/ego_exo4d_newfig1.jpg" alt="Ego-Exo4D preview">
+          </div>
+          <div class="pub-content">
+            <h3>Ego-Exo4D: Understanding Skilled Human Activity from First- and Third-Person Perspectives</h3>
+            <p class="authors">Kristen Grauman, Andrew Westbury, Lorenzo Torresani, Kris Kitani, Jitendra Malik, ... , <strong>Jianbo Shi</strong>, et al.</p>
+            <p class="venue">CVPR 2024</p>
+            <p class="pub-description">A large-scale multimodal multiview video dataset and benchmark for skilled human activity from egocentric and exocentric perspectives.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2311.18259" target="_blank" rel="noopener">Paper</a>
+              <a href="http://ego-exo4d-data.org/" target="_blank" rel="noopener">Website</a>
             </div>
           </div>
         </article>
