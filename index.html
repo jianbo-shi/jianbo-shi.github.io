@@ -67,7 +67,7 @@
 
     .header-content {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 420px;
+      grid-template-columns: minmax(0, 1fr) 300px;
       gap: 42px;
       align-items: center;
     }
@@ -111,8 +111,8 @@
     }
 
     .profile-pic {
-      width: 420px;
-      aspect-ratio: 5 / 3;
+      width: 300px;
+      aspect-ratio: 3 / 4;
       object-fit: cover;
       object-position: 62% 0%;
       border-radius: 8px;
@@ -295,6 +295,76 @@
       padding-left: 18px;
     }
 
+    .video-embed {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--soft);
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 320px));
+      gap: 18px;
+    }
+
+    .video-embed img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(1.35) contrast(1.08);
+      display: block;
+    }
+
+    .video-thumb-close {
+      transform: scale(1.7);
+      transform-origin: 50% 42%;
+    }
+
+    .video-thumb-close-left {
+      transform: scale(1.7);
+      transform-origin: 48% 42%;
+    }
+
+    .video-thumb-close-guitar {
+      transform: scale(1.32);
+      transform-origin: 46% 34%;
+    }
+
+    .video-link {
+      display: block;
+      position: relative;
+      color: inherit;
+    }
+
+    .video-link:hover {
+      text-decoration: none;
+    }
+
+    .play-button {
+      position: absolute;
+      inset: 50% auto auto 50%;
+      transform: translate(-50%, -50%);
+      width: 64px;
+      height: 46px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.72);
+      display: grid;
+      place-items: center;
+    }
+
+    .play-button::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 11px solid transparent;
+      border-bottom: 11px solid transparent;
+      border-left: 18px solid white;
+      margin-left: 4px;
+    }
+
     footer {
       border-top: 1px solid var(--line);
       padding: 28px 0 42px;
@@ -314,7 +384,7 @@
       }
 
       .profile-pic {
-        width: min(360px, 88vw);
+        width: min(300px, 78vw);
       }
 
       .pub-image {
@@ -325,6 +395,10 @@
       .section-header {
         align-items: flex-start;
         flex-direction: column;
+      }
+
+      .video-grid {
+        grid-template-columns: minmax(0, 410px);
       }
     }
   </style>
@@ -708,6 +782,32 @@
             <span class="thesis-title">"Bridging Visual Generation and Recognition", 2023.</span>
           </li>
         </ol>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Video</h2>
+        </div>
+        <div class="video-grid">
+          <div class="video-embed">
+            <a class="video-link" href="https://www.youtube.com/watch?v=kzT43oLuZYI" target="_blank" rel="noopener" aria-label="Watch video on YouTube">
+              <img class="video-thumb-close" src="assets/img/youtube_kzT43oLuZYI.jpg" alt="YouTube video thumbnail">
+              <span class="play-button" aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="video-embed">
+            <a class="video-link" href="https://www.youtube.com/watch?v=Fdc_TEAuKU0&list=RDFdc_TEAuKU0&start_radio=1" target="_blank" rel="noopener" aria-label="Watch video on YouTube">
+              <img class="video-thumb-close-left" src="assets/img/youtube_Fdc_TEAuKU0.jpg" alt="YouTube video thumbnail">
+              <span class="play-button" aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="video-embed">
+            <a class="video-link" href="https://www.youtube.com/watch?v=z5fxJpINXkQ" target="_blank" rel="noopener" aria-label="Watch video on YouTube">
+              <img class="video-thumb-close-guitar" src="assets/img/youtube_z5fxJpINXkQ.jpg" alt="YouTube video thumbnail">
+              <span class="play-button" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
       </section>
 
     </main>
